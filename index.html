@@ -1,0 +1,227 @@
+
+
+<style>
+.obstruction {
+  border-left: 4px solid #666;
+  padding-left: 10px;
+  margin: 14px 0;
+}
+
+.condition {
+  font-size: 0.9em;
+  opacity: 0.85;
+  margin-bottom: 6px;
+}
+
+.speaker {
+  font-weight: bold;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+}
+
+.script-box {
+  padding: 10px;
+  border: 1px solid #444;
+  margin: 8px 0;
+}
+
+.speaker {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.choice-table {
+  display: flex;
+  border: 1px solid #444;
+  margin: 12px 0;
+}
+
+.choice-column {
+  width: 50%;
+  padding: 12px;
+  border-right: 1px solid #444;
+}
+
+.choice-column:last-child {
+  border-right: none;
+}
+
+.choice {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.small-note {
+  font-size: 0.8em;
+  opacity: 0.8;
+}
+</style>
+<h3>Peephole Interrogation</h3>
+
+<div class="script-box">
+  <div class="speaker">Elpis</div>
+  Hah... Hah.... Please, let me stay! I can't go back. I just can't. Please, I'm scared... I feel it crawling down my spine. I knew this was coming. Now I can't help but fear the worst always.
+</div>
+
+<div class="choice-table">
+  <div class="choice-column">
+    <div class="choice">CHOICE: Where did you come from?</div>
+
+    <div class="script-box">
+      <div class="speaker">Elpis</div>
+      Uh, well, my house. You know, err, you see, visitors broke in.
+<br>
+I ran, and a For Rest delivery driver brought me here.
+<br>
+I'm sorry, but I need shelter. I'm terrified.
+    </div>
+  </div>
+
+  <div class="choice-column">
+    <div class="choice">CHOICE: Isn't there somewhere else you can go?</div>
+
+    <div class="script-box">
+      <div class="speaker">Elpis</div>
+      No. My mother is gone, and I was staying in my grandmother's house. <br>
+ She's also gone.
+<br>
+My other relatives are in, well, America. I don't think anywhere else will take me.
+    </div>
+  </div>
+</div>
+<div class="choice-table">
+  <div class="choice-column">
+    <div class="choice">CHOICE: What did you mean by "you knew it would happen"?</div>
+
+    <div class="script-box">
+      <div class="speaker">Elpis</div>
+      Sorry! That probably sounded insane.
+<br>
+I... I'm considered such.
+<br>
+I'm anxious, paranoid, worse. I feared the apocalypse. I had horrible thoughts that it might happen at any second.
+<br>
+You see here? It's my supplies. I'll give you any of it. Even my pills if you just save me.
+    </div>
+  </div>
+
+  <div class="choice-column">
+    <div class="choice">CHOICE: Why should I let you in?</div>
+
+    <div class="script-box">
+      <div class="speaker">Elpis</div>
+      I have plenty of supplies in my backpack!
+<br>
+I am a doomsday packer. I was constantly scared of some sort of apocalypse. Something that would bring us despair.
+<br>
+Uh, it happened. I'll give you water, canned food, why, you can even have some of my pills! Just a few.
+    </div>
+  </div>
+</div>
+<div class="choice-column">
+    <div class="choice">CHOICE: Why are you freaking out?</div>
+
+    <div class="script-box">
+      <div class="speaker">Elpis</div>
+      I'm sorry. It's just... I'm paranoid and very anxious. Sick, too.
+<br>
+Please don't make me leave because of that.
+<br>
+I just... Ugh, I'm so anxious that I might throw up. I don't want to die. Please... Won't you save me?
+    </div>
+  </div>
+
+<div class="choice-table">
+  <div class="choice-column">
+    <div class="choice">CHOICE: Come in.</div>
+
+    <div class="script-box">
+      <div class="speaker">Elpis</div>
+      Really? You're amazing! Wonderful! I'll never forget this.
+    </div>
+  </div>
+
+  <div class="choice-column">
+    <div class="choice">CHOICE: You should leave.</div>
+
+    <div class="script-box">
+      <div class="speaker">Elpis</div>
+      I'm so sorry... I.... Something's going to get me, isn't it? I'm doomed.... I'm so sorry....
+    </div>
+  </div>
+</div>
+<h4>Bribe</h4>
+
+<div class="script-box">
+  <div class="speaker">Elpis</div>
+  Really? Really? Please, please! I have plenty of things I can share! Here! See? (Item). For you. I'm worth it!
+</div>
+
+<div class="choice-table">
+  <div class="choice-column">
+    <div class="choice">CHOICE: Fine. Come in.</div>
+
+    <div class="script-box">
+      <div class="speaker">Elpis</div>
+      Thank you. You saved my life. I can breath a bit easier. I'll never forget my savior.
+    </div>
+  </div>
+
+  <div class="choice-column">
+    <div class="choice">CHOICE: I don't take bribes.</div>
+
+    <div class="script-box">
+      <div class="speaker">Elpis</div>
+I'm so sorry... I.... Something's going to get me, isn't it? I'm doomed.... I'm so sorry....
+    </div>
+  </div>
+</div>
+<h3>Obstructions</h3>
+<p><b>Elpis</b> will not enter the house if certain characters are already present.</p>
+
+<div class="obstruction">
+  <div class="condition">
+    If <b>Cashier Girl</b> is present:
+  </div>
+
+  <div class="script-box">
+    <div>
+      <div class="speaker">Elpis</div>
+      Oh, wow! There's a lovely redheaded girl over there.
+<br>
+I think there's a bit of room for me, if she doesn't mind. I think I could fit. 
+    </div>
+  </div>
+</div>
+
+<div class="obstruction">
+  <div class="condition">
+    If <b>Homeless Man</b> is present:
+  </div>
+
+  <div class="script-box">
+    <div>
+      <div class="speaker">Elpis</div>
+      Um, I'm so so sorry. There's a bit of a... well, homeless man over there my mind is racing about.
+<br>
+My anxiety is spiked. What if he kills me? I can't deal with it. Would you mind making him move, or maybe... leave? 
+    </div>
+  </div>
+</div>
+
+<div class="obstruction">
+  <div class="condition">
+    If <b>Theater guy</b> is present:
+  </div>
+
+  <div class="script-box">
+    <div>
+      <div class="speaker">Elpis</div>
+      Um, I'm so so sorry. There's a bit of a... well, bald man over there my mind is racing about.
+<br>
+My anxiety is spiked. What if he kills me? I can't deal with it. Would you mind making him move, or maybe... leave? 
+    </div>
+  </div>
+</div>
